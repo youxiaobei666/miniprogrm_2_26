@@ -1,0 +1,34 @@
+<!-- 上传备忘录模块 -->
+
+<view  class="up-rem-box">
+  <view style="text-align: center;">
+    添加备忘录
+  </view>
+  <view class="date-input">
+    <picker class="date-picker" mode="date" bindchange="dateChange">
+      选择日期 ：
+    </picker>
+    <view class="date-text">
+      {{date}}
+    </view>
+  </view>
+
+  <view class="weather-input">
+    <view class="weather-picker">
+    <picker mode="selector" bindchange="weatherChange" range="{{weatherList}}" range-key="text">
+      选择天气 ：
+    </picker>
+    </view>
+    <view class="weather-text">
+      {{ weatherIndex ? weatherList[weatherIndex].text: '选择后展示' }}
+      <image class="icon" src="{{weatherList[weatherIndex].icon}}" mode=""/>
+    </view>
+  </view>
+
+  <textarea maxlength='-1' class="text-area" value="{{upText}}"
+  bindinput="inputed"
+   placeholder="输入备忘录内容"/>
+  <view class="up-btn" catchtap="upted">
+    添加
+  </view>
+</view>

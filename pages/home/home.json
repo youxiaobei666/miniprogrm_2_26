@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "cover": "/components/cover/cover"
+  },
+  "componentPlaceholder": {
+    "cover": "view"
+  }
+}

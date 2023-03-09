@@ -1,0 +1,94 @@
+.cover {
+  visibility: hidden;
+  position: fixed; 
+  top: 0rpx;
+  left: 0rpx;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  z-index: 1000;
+}
+
+.show  {
+  visibility: visible;
+}
+
+.edit-box {
+  border-radius: 40rpx 40rpx 0 0;
+  width: 100vw;
+  height: 800rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background-color: #ffcce6;
+  position: fixed;
+  bottom: -600rpx;
+  opacity: 0;
+  transition: 0.3s ease;
+
+}
+.up {
+  bottom: -2rpx;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.editDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 28rpx;
+  height: 50rpx;
+  border: rgb(228, 90, 36) solid 3rpx;
+  border-radius: 10rpx;
+  margin: 20rpx 0 ;
+}
+
+.editWeather {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 28rpx;
+  height: 50rpx;
+  border: rgb(228, 90, 36) solid 3rpx;
+  border-radius: 10rpx;
+  margin: 20rpx 0 ;
+}
+
+.editText {
+  font-size: 30rpx;
+  height: auto;
+  border: rgb(228, 90, 36) solid 3rpx;
+  border-radius: 10rpx;
+  margin: 20rpx 0 ;
+  padding: 20rpx;
+}
+
+
+.close-btn{
+  font-size: 30rpx;
+  border: rgb(228, 90, 36) solid 3rpx;
+  border-radius: 10rpx;
+  width: 300rpx;
+  display: inline-block;
+  text-align: center;
+  line-height: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  background-color: rgb(255, 136, 136);
+}
+
+.confirm {
+  font-size: 30rpx;
+  border: rgb(228, 90, 36) solid 3rpx;
+  border-radius: 10rpx;
+  width: 300rpx;
+  text-align: center;
+  line-height: 50rpx;
+  height: 50rpx;
+  display: inline-block;
+  position: absolute;
+  right: 20rpx;
+  background-color: rgb(147, 154, 255);
+}

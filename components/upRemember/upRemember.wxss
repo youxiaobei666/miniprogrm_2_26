@@ -1,0 +1,103 @@
+.up-rem-box {
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 40rpx;
+  border: #ffcce6 solid 4rpx;
+  box-sizing: border-box;
+  width: 700rpx;
+}
+/* 日期选择行 */
+.date-input {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ffcce6 solid 2rpx;
+  height: 100rpx;
+  align-items: center;
+}
+
+.date-input .date-picker {
+  border: #ffcce6 solid 2rpx;
+  background-color: rgb(255, 222, 200);
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+}
+
+.date-input .date-text {
+  border: #ffcce6 solid 2rpx;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+}
+
+.weather-input {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ffcce6 solid 2rpx;
+  height: 100rpx;
+  align-items: center;
+
+}
+
+.weather-picker {
+  border: #ffcce6 solid 2rpx;
+  background-color: rgb(255, 222, 200);
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+
+}
+
+.weather-text {
+  border: #ffcce6 solid 2rpx;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+}
+
+.text-area {
+  border: #ffcce6 solid 2rpx;
+  /* width: 100%; */
+  padding: 20rpx;
+  /* margin: 20rpx; */
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 400rpx;
+  color: rgb(65, 65, 65);
+}
+
+.up-btn {
+  border: #ffcce6 solid 2rpx;
+  background-color: rgb(255, 222, 200);
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+}
+
+
+.icon {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 10rpx;
+}

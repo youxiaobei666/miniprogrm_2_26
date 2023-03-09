@@ -1,0 +1,66 @@
+<!-- 1.搜索框 -->
+<view class="search-box">
+  <icon type="search" size="22" w></icon>
+  <input type="text" confirm-type="search" bindinput="searchEvent" value="{{searchData}}" placeholder="搜某一天/某件事/心情" />
+</view>
+
+<!-- 2.轮播图 -->
+<swiper autoplay="true" class="swiper-box" circular="true" indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#ffcce6">
+  <swiper-item class="swiper-items" wx:for='{{swiperList}}' wx:key="id">
+    <image src="{{item.imgUrl}}" mode="aspectFill" class="item-img" />
+  </swiper-item>
+</swiper>
+<!-- 3.小列表 -->
+<view class="row-list">
+  <!-- 循环设置id,并传递给点击函数 -->
+  <view wx:for="{{rowListData}}" wx:key="id" class="list-item" catchtap="showInfo" id="{{item.id}}">
+    <view class="icon-box">
+      <image src="{{item.iconPath}}" mode="aspectFill" />
+    </view>
+    <view class="text-box">{{item.info}}</view>
+  </view>
+</view>
+<!-- 遮罩层弹窗自定义组件 -->
+<cover tempInfo="{{tempInfo}}" ifShow="{{ifShow}}" ifUp="{{ifUp}}" innerUrl="{{innerUrl}}" innerText='{{innerText}}' />
+<!-- 中间部分 -->
+<view class="mid-container">
+  <!-- inner-left -->
+  <view class="inner-left" catchtap="showSecret">
+    <view class="secret-text">{{secretList[secretRadomIndex].text}}</view>
+    <view class="cover" style="visibility: {{ifShowSecretCover}}">点一点，有很多秘密</view>
+
+  </view>
+  <!-- inner-right -->
+  <view class="inner-right">
+    <view class="noteBook" catchtap="toNoteBook">
+      <view class="noteBookBtn">
+        过往
+      </view>
+      <view class="noteBookText" style="width: 100rpx; height: 100rpx;"> 
+        <image style="width: 100%; height: 100%; margin-left: 40rpx;" src="/public/tabBarIcon/noteBook.png" mode="aspectFit"/>
+      </view>
+    </view>
+    <view class="remember" catchtap="toRemember">
+      <view class="rememberBtn" >
+        备忘录
+      </view>
+      <view class="noteBookText" style="width: 100rpx; height: 100rpx;">
+        <image style="width: 100%; height: 100%; margin-left: 40rpx;" src="/public/tabBarIcon/remember.png" mode="aspectFit"/>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 随机显示一个备忘录 -->
+<view class="showOneRemember" catchtap="toRemember">
+  <view class="head-line">
+    <text>展示第{{rememberIndexRadom+1}}个备忘录</text>
+    <text>天气：{{rememberList[rememberIndexRadom].weather}}</text>
+    <view class="weather-icon">
+      <image src="{{rememberList[rememberIndexRadom].weatherUrl}}" mode="aspectFit"/>
+    </view>
+    <text>日期：{{rememberList[rememberIndexRadom].date}}</text>
+  </view>
+  <view class="text-container">
+    <view>内容：{{rememberList[rememberIndexRadom].text}}</view>
+  </view>
+</view>

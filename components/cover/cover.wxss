@@ -1,0 +1,73 @@
+/* components/cover/cover.wxss */
+.mask {
+  width: 100vh;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  /* 设置不可见且不影响用户操作 */
+  visibility: hidden;
+  transition: .3s;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* 设置show 才展示 */
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.inner {
+  border-radius: 40rpx 40rpx 0 0;
+  position: absolute;
+  background-color: #ffcce6;
+  width: 100vw;
+  height: 400rpx;
+  display: flex;
+  align-items: center;
+  bottom: -400rpx;
+  transition: ease .3s;
+}
+
+.up {
+  /* 向上移动 */
+  bottom: 0;
+
+}
+
+.innerImg {
+  width: 300rpx;
+  height: 300rpx;
+  box-sizing: border-box;
+  margin: 5rpx;
+  margin-left: 14rpx;
+  border: #fff5fa solid 8rpx;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.right-box {
+  margin: 5rpx;
+  margin-left: 10rpx;
+  box-sizing: border-box;
+  width: 400rpx;
+  height: 300rpx;
+}
+
+.innerTitle {
+  /* position: absolute; */
+  /* top: 5rpx; */
+  width: 120rpx;
+  border-bottom: chocolate 1.5px solid;
+  color: chocolate;
+  font-size: 40rpx;
+  /* border:  red 2px solid; */
+}
+
+.innerText {
+  color: aliceblue;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  height: 230rpx;
+}

@@ -1,0 +1,117 @@
+.big-box {
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 40rpx;
+  border: #ffcce6 solid 4rpx;
+  box-sizing: border-box;
+  width: 700rpx;
+}
+
+.item-box {
+  /* border-bottom: #666666 solid 2rpx; */
+  margin-bottom: 20rpx;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ffcce6 solid 2rpx;
+  height: 100rpx;
+  align-items: center;
+}
+
+.date {
+  border: #ffcce6 solid 2rpx;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+  font-size: 21rpx;
+}
+
+.weather-box {
+  border: #ffcce6 solid 2rpx;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+  font-size: 21rpx;
+} 
+
+.index {
+  border: #ffcce6 solid 2rpx;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+  font-size: 21rpx;
+}
+
+.container-text {
+  display: flex;
+  border-bottom: #ffcce6 solid 2rpx;
+  border-left: #ffcce6 solid 2rpx;
+  border-right: #ffcce6 solid 2rpx;
+  padding: 20rpx;
+  /* width: 680rpx; */
+  height: 600rpx;
+  align-items: center;
+  box-sizing: border-box;
+}
+.weather {
+  width: 116rpx;
+  text-align: center;
+}
+.icon-box {
+  width: 40rpx;
+  height: 40rpx;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+
+.options-box {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ffcce6 dashed 4rpx;
+  height: 100rpx;
+  align-items: center;
+}
+
+.reEdit {
+  border: #ffcce6 solid 2rpx;
+  /* border: rgb(182, 182, 182) solid 2rpx; */
+  background-color: rgb(255, 222, 200);
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+  font-size: 24rpx;
+}
+
+.delete {
+  /* border: #ffcce6 solid 2rpx; */
+  border: rgb(194, 194, 194) solid 2rpx;
+  background-color: rgb(255, 200, 200);
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  width: 400rpx;
+  justify-content: center;
+  font-size: 24rpx;
+}

@@ -1,0 +1,30 @@
+<view class="big-box">
+ <view style="text-align: center;">
+   一共 {{remList.length}} 条备忘录
+ </view>
+  <view class="item-box" wx:for="{{remList}}" wx:key="index">
+    <view class="header">
+      <text class="index">第 {{index+1}} 个</text>
+      <text class="date">日期：{{item.date}}</text>
+      <view class="weather-box">
+        <text class="weather">天气：{{item.weather}}</text>
+        <view class="icon-box">
+          <image class="icon" src="{{item.weatherUrl}}" mode="aspectFit" />
+        </view>
+      </view>
+      
+    </view>
+    <view class="container-text">
+      内容:{{item.text}}
+    </view>
+
+    <view class="options-box"  id="{{index}}">
+      <view class="reEdit" catchtap="reDdit" id="{{index}}" >
+        重新编辑这条备忘录
+      </view>
+      <view class="delete" catchtap="delete"  id="{{index}}">
+        删除这条备忘录
+      </view>
+    </view>
+  </view>
+</view>

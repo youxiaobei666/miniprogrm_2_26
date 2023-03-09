@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/noteBook/noteBook",
+    "pages/remember/remember"
+    
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/public/tabBarIcon/home.png",
+        "selectedIconPath": "/public/tabBarIcon/home.png"
+      },
+      {
+        "pagePath": "pages/noteBook/noteBook",
+        "text": "过往",
+        "iconPath": "/public/tabBarIcon/noteBook.png",
+        "selectedIconPath": "/public/tabBarIcon/noteBook.png"
+      },
+      {
+        "pagePath": "pages/remember/remember",
+        "text": "备忘录",
+        "iconPath": "/public/tabBarIcon/remember.png",
+        "selectedIconPath": "/public/tabBarIcon/remember.png"
+      }
+     
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffcce6",
+    "navigationBarTitleText": "艾兰",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

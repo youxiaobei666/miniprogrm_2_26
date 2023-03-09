@@ -1,0 +1,26 @@
+<view class="cover {{ifShow ? 'show':''}}">
+  <view class="edit-box {{ifUp? 'up':''}}">
+    <view style="text-align: center;">
+      修改备忘录
+    </view>
+    <view class="editDate">
+      <text class="ediDateText">日期：{{editRem.date}}</text>
+      <picker class="date-picker" mode="date" bindchange="dateChange">点击修改为：{{date}}</picker>
+    </view>
+    <view class="editWeather">
+      <text>天气：{{editRem.weather}}</text>
+      <picker mode="selector" bindchange="weatherChange" range="{{weatherList}}" range-key="text">点击修改天气：{{ weatherIndex ? weatherList[weatherIndex].text : '待选择'}}
+    </picker>
+    </view>
+    <view class="editText">
+      <textarea value="{{editRem.text}}" maxlength='-1' bindinput="input"/>
+    </view>
+    <!-- 以下底部按钮 -->
+    <view class="close-btn" catchtap="closeCover">
+      关闭 
+    </view>
+    <view class="confirm" catchtap="confirm">
+      确认修改
+    </view>
+  </view>
+</view>

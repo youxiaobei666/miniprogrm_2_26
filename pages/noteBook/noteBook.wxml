@@ -1,0 +1,18 @@
+<view class="noteBook-item" wx:for="{{noteBookList}}" wx:key="index">
+  <view class="inner-img-one-two" wx:if="{{item.type==='2'}}">
+    <image  class="inner-img-two" src="{{item.imgs.img1Url}}" mode="aspectFill"/>
+    <image  class="inner-img-two" src="{{item.imgs.img2Url}}" mode="aspectFill"/>
+  </view>
+  <image  class="inner-img-one" wx:if="{{item.type==='1'}}" src="{{item.imgUrl}}" mode="aspectFill"/>
+  <view class="text-container" style="font-size: 26rpx;">
+    <view style="display: flex; justify-content: space-around; ">
+      <view class="title" style="display: inline-block; margin-right: 10rpx; font-weight: 700;">
+      {{item.title}}
+    </view>
+    <text class="address">地点：{{item.address}}</text>
+    </view>
+    <view>
+      {{item.text}}
+    </view>
+  </view>
+</view>

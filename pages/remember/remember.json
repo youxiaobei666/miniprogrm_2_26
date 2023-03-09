@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "upRemember": "/components/upRemember/upRemember",
+    "showRemember": "/components/showRemember/showRemember",
+    "editContainer": "/components/editContainer/editContainer"
+  }
+}

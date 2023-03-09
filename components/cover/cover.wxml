@@ -1,0 +1,11 @@
+<!--components/cover/cover.wxml-->
+<view class="mask {{ifShow ? 'show':''}}" catchtap="closeMask">
+  <view class="inner {{ifUp ? 'up': ''}}">
+    <image class="innerImg" src="{{innerUrl}}" mode="aspectFill" />
+    <view class="right-box">
+      <view class="innerTitle">{{tempInfo}}</view>
+      <view class="innerText">{{innerText}}</view>
+    </view>
+
+  </view>
+</view>

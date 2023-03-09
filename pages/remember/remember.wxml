@@ -1,0 +1,8 @@
+<view class="container">
+  <!-- 添加备忘录组件 -->
+<upRemember date="{{toDay}}"></upRemember>
+<!-- showRemember 展示所有备忘录 -->
+<showRemember remList="{{remList}}" ></showRemember>
+<!-- 编辑组件 -->
+<editContainer class="edit-container" ifUp="{{ifUp}}" ifShow="{{ifShow}}" editRem="{{editRem}}"></editContainer>
+</view>
