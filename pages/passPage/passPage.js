@@ -1,14 +1,44 @@
-// pages/setting/index.js
-
+// pages/passPage/passPage.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    password: ''
+  },
+  setPassword: function(e){
+    this.setData({
+      password: e.detail.value
+    })
+  },
+  toDoLogin: function () {
+    console.log(this.data.password);
+    // 判断
+    if (this.data.password === '010203') {
+      
+      wx.switchTab({
+        url: '/pages/home/home',
+      })
+    } else {
+      wx.showModal({
+        title: '密码错误',
+        complete: (res) => {
+          if (res.cancel) {
+
+          }
+
+          if (res.confirm) {
+
+          }
+        }
+      })
+      this.setData({
+        password:''
+      })
+    }
 
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

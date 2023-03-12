@@ -137,6 +137,7 @@ Page({
   },
   // 页面加载周期
   onLoad(options) {
+    
     // 绑定store数据
     this.storeBindings = createStoreBindings(this,{
       store,
@@ -155,10 +156,18 @@ Page({
     //     wx.setStorageSync('swiperList', data.data)
     //   }
     // })
-    const random = Math.floor(Math.random()*3)
-    this.setData({
-      rememberIndexRadom: random
-    })
+    const random = Math.floor(Math.random()*store.rememberList.length + 1)
+    console.log("length:"+store.rememberList.length);
+    if(store.rememberList.length === 0){
+      this.setData({
+        rememberIndexRadom: -1
+      })
+    } else {
+      this.setData({
+        rememberIndexRadom: random
+      })
+    }
+    console.log("index:"+this.data.rememberIndexRadom);
   },
 
   /**

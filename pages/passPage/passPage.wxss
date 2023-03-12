@@ -1,0 +1,38 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -200rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  margin-bottom: 30rpx;
+  color: chocolate;
+}
+
+.password {
+  border: #ffcce6 solid 4rpx;
+  width: 400rpx;
+  height: 100rpx;
+  text-align: center;
+  font-size: 50rpx;
+  border-radius: 20rpx;
+  color: chocolate;
+}
+.login-btn {
+  /* background-color: #ffcce6; */
+  border: #ffcce6 solid 4rpx;
+  width: 300rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+  color: rgb(65, 65, 65);
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

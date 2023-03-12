@@ -201,3 +201,14 @@
   font-size: 30rpx;
   text-indent: 2em;
 }
+
+.showOneRememberNull {
+  box-sizing: border-box;
+  margin: 10rpx;
+  border: #ffcce6 solid 3rpx;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+}

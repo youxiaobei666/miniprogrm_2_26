@@ -2,7 +2,7 @@ import {store} from '../../store/index'
 
 Component({
   properties: {
-    remList:''
+    remList: ''
   },
   /**
    * 组件的初始数据
@@ -33,7 +33,7 @@ Component({
      * 删除
      */
     delete: function(e){
-      console.log(e);
+    
       // 获取索引
       let index = e.currentTarget.id
       /**

@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/passPage/passPage",
     "pages/home/home",
     "pages/noteBook/noteBook",
     "pages/remember/remember"
-    
   ],
   "tabBar": {
     "list": [

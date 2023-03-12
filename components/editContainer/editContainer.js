@@ -42,11 +42,11 @@ Component({
    */
   methods: {
     input: function (e) { // 内容输入事件
-      console.log('shuru');
+      
       this.setData({
         text: e.detail.value
       })
-      console.log(this.data.text);
+      
 
     },
     closeCover: function () { // 关闭
@@ -59,12 +59,12 @@ Component({
       store.acUp('')
     },
     weatherChange: function (e) { // 天气
-      console.log(e.detail.value);
+      
       this.setData({
         weather: this.data.weatherList[e.detail.value].text,
         weatherUrl: this.data.weatherList[e.detail.value].icon
       })
-      console.log(this.data.weather);
+  
     },
     dateChange: function (e) { // 日期
       this.setData({
@@ -75,12 +75,12 @@ Component({
      * 提交
      */
     confirm: function (e) {
-      console.log(this.properties.editRem);
+     
       /** 
        *  获取这个被改的备忘录index 
        * */
       let index = this.properties.editRem.index
-      console.log(index);
+    
 
       /**
        * 获取日期
@@ -99,12 +99,12 @@ Component({
       if (this.data.weather === '') {
         weather = this.properties.editRem.weather // name
         weatherUrl = this.properties.editRem.weatherUrl
-        console.log(weather);
+       
       } else {
         weather = this.data.weather
         weatherUrl = this.data.weatherUrl
       }
-      console.log(weatherUrl + weather);
+     
 
       /**
        * 获取内容
@@ -113,12 +113,12 @@ Component({
 
       if (this.data.text == '') {
         text = this.properties.editRem.text
-        console.log('kid');
+       
       } else {
         text = this.data.text
       }
       // text = this.data.text
-      console.log(text);
+    
       /**
        * 制作临时对象 length === 5 
        */
@@ -129,7 +129,7 @@ Component({
         weather: weather,
         weatherUrl: weatherUrl
       }
-      console.log(tempObj);
+      
       /**
        * 把新的对象传递给store
        */

@@ -51,16 +51,23 @@
   </view>
 </view>
 <!-- 随机显示一个备忘录 -->
-<view class="showOneRemember" catchtap="toRemember">
+
+<view  wx:if="{{rememberIndexRadom === -1}}" class="showOneRememberNull" catchtap="toRemember">
+  还没备忘录哦，请添加一条备忘录,点我添加
+</view>
+
+<view wx:if="{{rememberIndexRadom > 0 }}">
+  <view class="showOneRemember" catchtap="toRemember">
   <view class="head-line">
-    <text>展示第{{rememberIndexRadom+1}}个备忘录</text>
-    <text>天气：{{rememberList[rememberIndexRadom].weather}}</text>
+    <text>展示第{{rememberIndexRadom}}个备忘录</text>
+    <text>天气：{{rememberList[rememberIndexRadom-1].weather}}</text>
     <view class="weather-icon">
-      <image src="{{rememberList[rememberIndexRadom].weatherUrl}}" mode="aspectFit"/>
+      <image src="{{rememberList[rememberIndexRadom-1].weatherUrl}}" mode="aspectFit"/>
     </view>
-    <text>日期：{{rememberList[rememberIndexRadom].date}}</text>
+    <text>日期：{{rememberList[rememberIndexRadom-1].date}}</text>
   </view>
   <view class="text-container">
-    <view>内容：{{rememberList[rememberIndexRadom].text}}</view>
+    <view>内容：{{rememberList[rememberIndexRadom-1].text}}</view>
   </view>
+</view>
 </view>

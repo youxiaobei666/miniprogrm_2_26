@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="title">
+    请输入密码：
+  </view>
+  <input class="password" type="number" value="{{password}}"  bindinput="setPassword" />
+  <view class="login-btn" catchtap="toDoLogin" >登陆</view>
+</view>
